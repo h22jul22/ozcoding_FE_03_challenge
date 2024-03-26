@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+    <link href="sign_up_form.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Nanum+Pen+Script&family=Sunflower:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="form">
+            <h1>OZ초격차 회원가입</h1>
+            <input type="email" class="form__input" placeholder="이메일을 입력하세요."/><br>
+            <input type="text" class="form__input" placeholder="이름을 입력하세요."/><br>
+            <input type="password" class="form__input" placeholder="비밀번호를 입력하세요."/><br>
+            <input type="password" class="form__input" placeholder="비밀번호를 다시 입력하세요."/><br>
+            <div class="numberDiv">
+                <input type="text" class="number" placeholder="010"/> -
+                <input type="text" class="number" placeholder="1234"/> -
+                <input type="text" class="number" placeholder="5678"/>
+            </div>
+        </form>
+        <section>
+            <div class="submit">
+                <input type="submit" class="submit__bt" value="인증번호 전송"/><br>
+                <button class="done">인증 완료</button>
+            </div>
+            <div class="area">
+                <select>
+                    <option>-- 지역을 선택하세요. --</option>
+                    <option>서울</option>
+                    <option>경기</option>
+                    <option>부산</option>
+                </select>
+            </div>
+            <div class="sex">
+                <input type="radio" name="sex" id="female" />
+                <label for="female">여성</label>
+                <input type="radio" name="sex" id="male"/>
+                <label for="male">남성</label>
+            </div>
+            <div class="signUp">
+                <input type="submit" class="signUp__bt" value="가입하기"/>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

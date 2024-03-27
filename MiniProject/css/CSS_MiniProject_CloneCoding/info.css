@@ -1,0 +1,35 @@
+.info {
+    width: 100%;
+    height: 19.5rem;
+    background-color: rgb(201, 174, 215);
+}
+.info__text {
+    max-width: 48rem;
+    margin: auto;
+    padding: 3rem 1rem 0;
+}
+.info__text h1 {
+    margin: 0;
+    font-size: 2rem;
+    line-height: 3.2rem;
+}
+.info__text p {
+    margin: 0.5rem 0 0;
+    font-size: 1.12rem;
+    line-height: 2rem;
+}
+@media screen and (max-width: 768px) {
+    .info {
+        height: 18.5rem;
+    }    
+    .info__text {
+        padding: 1.5rem 1rem 0;
+    }
+    .info__text h1 {
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .info__text p {
+        display: none;
+    }
+}

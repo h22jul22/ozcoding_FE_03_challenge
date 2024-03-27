@@ -1,0 +1,145 @@
+.header{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid #C3C4C7;
+}
+.header-content{
+    display: flex;
+    width: 100%;
+    max-width: 78rem;
+    padding: 0.75rem 1rem;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.header-logo{
+    font-size: 2.5em;
+    font-weight: 900;
+    width: 25%;
+    margin: 0;
+}
+.header-search{
+    width: 50%;
+}
+.header-search input{
+    width: 500px;
+    height: 3rem;
+    border: 2px solid crimson;
+    padding: 0 10px;
+}
+.header-icon{
+    width: 25%;
+}
+.header-icon input{
+    height: 3rem;
+    width: 30%;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+.main{
+    margin-top: 3rem;
+    width: 100%;
+}
+.banner{
+    width: 100%;
+    max-width: 78rem;
+    text-align: center;
+    margin: auto;
+}
+.banner-fir{
+    height: 17.5rem;
+    background-color: rgb(255, 146, 30, 0.9);
+    margin-bottom: 1rem;
+}
+.banner-sec{
+    height: 15rem;
+    background-color: rgb(195, 195, 195, 0.5);
+}
+.banner-fir-small{
+    font-size: 1.5em;
+    font-weight: 900;
+    padding: 5.75rem 0 1rem 0;
+}
+.banner-fir-big{
+    font-size: 3.5em;
+    font-weight: 900;
+}
+.trend{
+    margin: 0 800px 0 100px;
+}
+.banner-sec-small{
+    font-size: 1.5em;
+    font-weight: 900;
+    margin: 0;
+    color: rgba(0, 0, 0, 0.5);;
+}
+.banner-sec-small:nth-child(1){
+    padding-top: 3.5rem;
+}
+.banner-sec-big{
+    font-size: 3.05em;
+    font-weight: 900;
+    padding: 0.20rem 0;
+    margin: 0;
+}
+.items{
+    width: 100%;
+    max-width: 78rem;
+    margin: auto;
+}
+.item-title{
+    margin: 4.15rem 0 1.75rem 0;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+.item-container{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    width: 50%;
+    padding: 0;
+    width: 100%;
+    max-width: 78rem;
+    margin: 0 -1rem;
+}
+.item{
+    width: 22.43%;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+.item-image{
+    height: 0;
+    padding-bottom: 60%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    margin: 0;
+}
+.item-info{
+    flex: 1 1 auto;
+	padding: 1em;
+	background: rgb(175, 175, 175, 0.1);;
+}
+.item-info-name{
+    font-size: 1rem;
+}
+.item-info-pay{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+.footer{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    font-size: 0.815rem;
+    line-height: 1.5;
+    color: #868B94;
+    border-top: 1px solid #C3C4C7;
+    padding: 1.5rem 0;
+}

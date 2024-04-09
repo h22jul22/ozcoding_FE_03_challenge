@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+}
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container {
+    width: 680px;
+    margin: auto;
+    background-color: white;
+    border-radius: 15px;
+}
+#form {
+    border: 1px solid wheat;
+    border-radius: 15px;
+    padding: 30px;
+}
+.table {
+    width: 80%;
+    margin: auto;
+}
+th {
+    width: 40%;
+    text-align: right;
+    padding: 5px;
+}
+td {
+    width: 60%;
+    text-align: left;
+    padding: 5px;
+}
+input,
+select,
+textarea {
+    width: 240px;
+    padding: 5px;
+}
+input[type='radio'] {
+    width: initial;
+}
+.buttons {
+    margin: 10px 0 0 0;
+    text-align: center;
+}
+.buttons .btn {
+    width: 80px;
+}
+textarea {
+    resize: none;
+    width: 240px;
+    min-height: 100px;
+}

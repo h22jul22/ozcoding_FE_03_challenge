@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+html,
+body {
+    margin: 0;
+}
+#container {
+    width: 100%;
+    max-width: 640px;
+    margin: auto;
+}
+header {
+    width: 100%;
+    max-width: 640px;
+    height: 60px;
+    border-bottom: 0.5px solid gray;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+}
+.filter-text {
+    width: 180px;
+    border-right: 0;
+}
+.filter-button,
+.reset {
+    font-size: 12px;
+    cursor: pointer;
+}
+.filter-button:hover,
+.reset:hover {
+    background-color: rgb(175, 175, 175);
+    border: 0.5px solid rgb(175, 175, 175);
+}
+.header__search {
+    display: flex;
+    align-items: center;
+}
+.filter-select {
+    width: 200px;
+    cursor: pointer;
+}
+input,
+button,
+select {
+    height: 30px;
+    border: 0.5px solid gray;
+}
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 60px;
+}
+.flex-item {
+    width: 200px;
+    height: 200px;
+}
+.more,
+.top {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    cursor: pointer;
+}
+.more {
+    color: #ffffff;
+    background-color: rgb(232, 180, 78);
+    left: 100px;
+    bottom: 100px;
+}
+.top {
+    color: #ffffff;
+    background-color: rgb(251, 179, 34);
+    right: 100px;
+    bottom: 100px;
+}

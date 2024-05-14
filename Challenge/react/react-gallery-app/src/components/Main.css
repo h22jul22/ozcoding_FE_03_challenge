@@ -1,0 +1,33 @@
+.column-wrapper {
+    width: 1240px;
+    margin: 71px auto;
+}
+
+.column {
+    column-count: 3;
+    column-width: 300px;
+    column-gap: 20px;
+}
+
+.img {
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 1240px) {
+    .column-wrapper {
+        width: 800px;
+    }
+    .column {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 768px) {
+    .column-wrapper {
+        width: 400px;
+    }
+    .column {
+        column-count: 1;
+    }
+}

@@ -1,18 +1,10 @@
 import styled from 'styled-components';
 import { TiImage } from 'react-icons/ti';
-import axiosIns from '../api/axios';
-import requests from '../api/requests';
 
-const Footer = ({ setPhotos }) => {
-    const newFetchData = async () => {
-        const response = await axiosIns.get(requests.randomImages);
-        //const responseId = response.data.map((res) => res.id);
-        setPhotos((prev) => [...prev, ...response.data]);
-    };
-
+const Footer = ({ onClick }) => {
     return (
         <Bottom>
-            <MoreButton onClick={newFetchData}>
+            <MoreButton onClick={onClick}>
                 <TiImage />
             </MoreButton>
         </Bottom>

@@ -1,13 +1,8 @@
 import './Main.css';
 
 const Main = ({ photos, search }) => {
-    console.log(photos);
     const photoList = photos.filter((photo) => {
-        if (photo.alt_description === null || undefined) {
-            return false;
-        } else {
-            return photo.alt_description.includes(search);
-        }
+        return photo.alt_description && photo.alt_description.includes(search);
     });
 
     return (

@@ -21,7 +21,7 @@ const Nav = ({ fetchData, search, setSearch }) => {
     return (
         <NavWrapper>
             <Logo>
-                <img src='/public/images/unsplash-logo.png' alt='logo' />
+                <img src='/images/unsplash-logo.png' alt='logo' />
             </Logo>
             <Input
                 value={search}

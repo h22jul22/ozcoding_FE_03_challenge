@@ -1,0 +1,120 @@
+.banner {
+    position: relative;
+    color: white;
+    object-fit: contain;
+    height: 448px;
+}
+
+@media (max-width: 784px) {
+    .banner__contents {
+        margin-left: 20px !important;
+        height: 20% !important;
+        width: 50% !important;
+    }
+    .banner__title {
+        font-size: 1.3rem !important;
+        padding-bottom: 0 !important;
+    }
+    .banner__description {
+        display: none;
+    }
+    .banner__button {
+        font-size: 0.7rem !important;
+    }
+}
+
+@media (max-width: 1140px) {
+    .banner__title {
+        font-size: 2.2rem !important;
+    }
+    .banner__description {
+        font-size: 0.9rem !important;
+    }
+    .banner__button {
+        font-size: 0.85rem !important;
+    }
+}
+
+@media (min-width: 1300px) {
+    .banner {
+        position: relative;
+        height: 600px;
+    }
+    .banner--fadeBottom {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 40rem;
+        z-index: 999;
+    }
+}
+
+.banner__contents {
+    margin-left: 40px;
+    padding-top: 140px;
+    height: 30%;
+    width: 60%;
+    position: absolute;
+    bottom: 150px;
+    left: 30px;
+    z-index: 2;
+}
+.banner__title {
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 0.5rem;
+}
+.banner__description {
+    width: 45rem;
+    line-height: 1.3;
+    padding-top: 1rem;
+    font-weight: 500;
+    font-size: 1rem;
+    max-width: 400px;
+    height: 80px;
+}
+.banner__button {
+    border: none;
+    background-color: #fff;
+    color: #111;
+    font-size: 1rem;
+    outline: none;
+    font-weight: 700;
+    border-radius: 2px;
+    padding: 0.4rem 1rem;
+    cursor: pointer;
+}
+.banner__button:hover {
+    color: #000000;
+    background-color: rgba(170, 170, 170, 0.9);
+    transition: all 0.2s;
+}
+.banner--fadeBottom {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 7.4rem;
+    background-image: linear-gradient(180deg, transparent, rgba(37, 37, 37, 0.61), #111111);
+    z-index: 999;
+}
+
+.swiper-button-prev {
+    color: white !important;
+}
+
+.swiper-button-next {
+    color: white !important;
+}
+
+.swiper-pagination {
+    display: none !important;
+}
+
+/* .swiper-pagination-bullet {
+    background: gray !important;
+    opacity: 1 !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: white !important;
+} */

@@ -1,0 +1,45 @@
+.detail-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 70px auto;
+}
+
+.detail__image {
+    width: 65%;
+}
+
+.detail__text {
+    height: 20%;
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.detail__text-title {
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.detail__text-average {
+    font-size: 1.2rem;
+}
+
+.detail__text-overview {
+    font-size: 1.2rem;
+}
+
+@media screen and (max-width: 768px) {
+    .detail__text-title {
+        font-size: 1.8rem;
+    }
+    .detail__text-average {
+        font-size: 1rem;
+    }
+    .detail__text-overview {
+        font-size: 1rem;
+    }
+}

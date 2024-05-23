@@ -10,8 +10,8 @@ const ExpenseTotal = () => {
     }, 0);
 
     return (
-        <div className='alert alert-info p-4'>
-            <span>총 합계: {formatNumberToWon(totalExpenses)}</span>
+        <div className='alert alert-warning p-4'>
+            <span>총 지출: {formatNumberToWon(totalExpenses)}</span>
         </div>
     );
 };

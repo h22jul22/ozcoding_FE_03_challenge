@@ -1,0 +1,37 @@
+.title {
+    font-size: 2rem;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 30rem;
+}
+.post {
+    height: 100%;
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 30rem;
+}
+.post ul {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.post li {
+    display: flex;
+    flex-direction: column;
+    gap: 0.3rem;
+    padding: 1rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    color: #2c292b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.post h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.post p {
+    font-size: 1.25rem;
+}
+.link {
+    font-size: 0.9rem;
+}

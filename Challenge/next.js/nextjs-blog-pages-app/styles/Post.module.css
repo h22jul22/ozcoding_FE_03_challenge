@@ -1,0 +1,28 @@
+.title {
+    font-size: 2rem;
+    margin: 1rem auto;
+    width: 90%;
+    max-width: 30rem;
+}
+
+.post {
+    height: 100%;
+    margin: 3rem auto;
+    width: 90%;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    padding: 1.5rem;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    color: #2c292b;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+.post h2 {
+    font-size: 1.75rem;
+    font-weight: 700;
+}
+.post p {
+    font-size: 1.5rem;
+}

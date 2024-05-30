@@ -1,26 +1,25 @@
 import Header from '@/components/Header';
 import Post from '@/components/Post';
 import posts from '@/utils/posts';
-import { useRouter } from 'next/router';
-import { useEffect, useState } from 'react';
 
-export default function PostSlug() {
-    const router = useRouter();
-    const [post, setPost] = useState({});
-
-    const getPost = () => {
-        const [post] = posts.filter((post) => post.id === Number(router.query.slug));
-        setPost(post);
-    };
-
-    useEffect(() => {
-        getPost();
-    }, []);
-
+export default function PostSlug({ post }) {
     return (
         <>
             <Header />
             <Post post={post} />
         </>
     );
+}
+
+export function getStaticPaths() {
+    const paths = posts.map((post) => ({ params: { slug: String(post.id) } }));
+    return { paths, fallback: false };
+}
+
+export function getStaticProps({ params }) {
+    return {
+        props: {
+            post: posts.find((post) => post.id === Number(params.slug)),
+        },
+    };
 }

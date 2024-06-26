@@ -40,7 +40,7 @@ function TodoContainer({ theme, toggleTheme }) {
 
     return (
         <div className='todo-app-container'>
-            <ButtonContainer createTodo={createTodo} />
+            <ButtonContainer createTodo={createTodo} theme={theme} toggleTheme={toggleTheme} />
             <div className='todo-list'>
                 {todos.map((todo) => (
                     <TodoItem
